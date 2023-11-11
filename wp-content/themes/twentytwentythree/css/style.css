@@ -1,0 +1,46 @@
+/*
+Theme Name: My Theme
+Theme URI: https://example.com/my-theme
+Description: Custom WordPress theme
+Version: 1.0.0
+Author: Your Name
+Author URI: https://example.com
+Text Domain: my-theme
+*/
+
+/* Add your custom CSS styles here */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+p {
+    color: #666;
+    font-size: 16px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Add your custom styles for specific elements or classes here */
+.my-custom-class {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Add your media queries here */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+}
