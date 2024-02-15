@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Card</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -42,7 +42,7 @@
         }
         .content {
             padding: 20px;
-            text-align: center;
+            text-align: justify;
         }
         footer {
             background-color: #333;
@@ -52,6 +52,44 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+        .home-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .contact-card {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card .avatar {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            background-image: url('https://imgs.search.brave.com/ObY--OF4bvv7rCkm92qYk2OM3womh6bEZLhvLLxTfGQ/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzE4LzM4LzE3/LzM2MF9GXzUxODM4/MTczNF9uSVJ4RWQ2/MEwzMEdEb25oTEJB/UGN6WG9STEVoSGpx/Wi5qcGc');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .contact-card .details {
+            padding: 20px;
+        }
+
+        .contact-card .details h2 {
+            margin-top: 0;
+        }
+
+        .contact-card .details p {
+            margin: 5px 0;
+        }
+
+        .contact-card .details .email {
+            color: #007bff;
         }
     </style>
 </head>
