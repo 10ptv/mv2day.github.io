@@ -3,10 +3,9 @@ session_start();
 
 // Database credentials
 $servername = "localhost"; // Change this to your database server hostname
-$username = "mv2day"; // Change this to your database username
+$username = "id21884745_me"; // Change this to your database username
 $password = "Rithylove71#"; // Change this to your database password
-$dbname = "id21884745_me"; // Change this to your database name
-
+$dbname = "id21884745_me"; 
 try {
     // Create connection
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -21,7 +20,7 @@ try {
         $password = $_POST['password'];
         
         // SQL query to check if the username and password exist in the database
-        $stmt = $conn->prepare("SELECT * FROM users WHERE username=:username AND password=:password");
+        $stmt = $conn->prepare("SELECT * FROM `login` WHERE username=:username AND password=:password");
         $stmt->bindParam(':username', $username);
         $stmt->bindParam(':password', $password);
         $stmt->execute();
